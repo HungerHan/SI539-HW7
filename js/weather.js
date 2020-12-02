@@ -65,7 +65,7 @@ function gettingJSON(){
         //I would print the JSON to the console
         // Your code here.
         loc = json["name"];
-        document.getElementById("#loc").innerHTML = loc;
+        document.querySelector("#loc").innerHTML = loc;
 
         temp = json["main"]["temp"];
         let tempExp = " with " + json["#weather"][0]["description"];

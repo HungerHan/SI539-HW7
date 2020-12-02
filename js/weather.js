@@ -14,7 +14,7 @@ function gettingJSON(){
     }
     else
     {
-        location = document.querySelector("location").value;
+        location = document.querySelector("#location").value;
     }
 
     console.log("Location is : " + location);
@@ -65,11 +65,11 @@ function gettingJSON(){
         //I would print the JSON to the console
         // Your code here.
         loc = json["name"];
-        document.querySelector("#loc").innerHTML = loc;
+        document.getElementById("loc").innerHTML = loc;
 
         temp = json["main"]["temp"];
-        let tempExp = " with " + json["#weather"][0]["description"];
-        document.querySelector("#temp").innerHTML = temp + tempExp;
+        let tempExp = " with " + json["weather"][0]["description"];
+        document.getElementById("temp").innerHTML = temp + tempExp;
 
         tempImg = json["weather"][0]["icon"];
         var setSrc = "http://openweathermap.org/img/wn/" + tempImg + ".png";

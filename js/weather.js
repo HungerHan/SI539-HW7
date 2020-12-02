@@ -72,7 +72,7 @@ function gettingJSON(){
         document.getElementById("temp").innerHTML = temp + tempExp;
 
         tempImg = json["weather"][0]["icon"];
-        var setSrc = "http://openweathermap.org/img/wn/" + tempImg + ".png";
+        var setSrc = "https://openweathermap.org/img/wn/" + tempImg + ".png";
         var setAlt = json["weather"][0]["description"];
         var setTitle = "Weather Image";
         document.querySelector("#tempImg").setAttribute("src", setSrc);

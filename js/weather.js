@@ -40,11 +40,11 @@ function gettingJSON(){
     // Your code here.  
     if (Number.isInteger(location))
     {
-        query = "https://api.openweathermap.org/data/2.5/weather?zip=" + location  + "&appid=" + apikey + "&units=" + format;
+        query = "https://api.openweathermap.org/data/2.5/weather?zip=" + location  + "&appid=" + apiKey + "&units=" + format;
     }
     else
     {
-        query = "https://api.openweathermap.org/data/2.5/weather?q=" + location  + "&appid=" + apikey + "&units=" + format;
+        query = "https://api.openweathermap.org/data/2.5/weather?q=" + location  + "&appid=" + apiKey + "&units=" + format;
     }
 
 

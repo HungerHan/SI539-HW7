@@ -8,7 +8,7 @@ function gettingJSON(){
     //Set default location if one isn't provided
     let location;
     // Your code here.
-    if (document.querySelector(#location).value == "")
+    if (document.querySelector("#location").value == "")
     {
         location = "Ann Arbor";
     }
@@ -72,14 +72,12 @@ function gettingJSON(){
         document.querySelector("#temp").innerHTML = temp + tempExp;
 
         tempImg = json["weather"][0]["icon"];
-        let setSrc = "http://openweathermap.org/img/wn/" + tempImg + ".png";
-        let setAlt = json["weather"][0]["description"];
-        let setTitle = "Weather Image";
+        var setSrc = "http://openweathermap.org/img/wn/" + tempImg + ".png";
+        var setAlt = json["weather"][0]["description"];
+        var setTitle = "Weather Image";
         document.querySelector("#tempImg").setAttribute("src", setSrc);
         document.querySelector("#tempImg").setAttribute("alt", setAlt);
         document.querySelector("#tempImg").setAttribute("title", setTitle);
         
-
-
     });
 }
